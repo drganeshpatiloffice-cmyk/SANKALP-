@@ -158,10 +158,6 @@ document.querySelectorAll('.gov-identity').forEach((headerBlock) => {
         <div class="container notice-strip-inner">
           <strong>Notifications:</strong>
           <div class="notice-marquee">
-            <span>• 15 March: Rural health camp registration is now open</span>
-            <span>• Applications for the women skill development batch are open until 31 March</span>
-            <span>• Volunteer orientation is held every Saturday at 11:00 AM</span>
-          </div>
         </div>
       </section>
     `
@@ -507,11 +503,7 @@ if (recentDonorList) {
   let donorItemsMarkup = '';
 
   if (!latestRecords.length) {
-    const sampleDonors = [
-      { name: 'Rahul Sharma', amount: 2500, initiative: 'Yashodaya Academy' },
-      { name: 'Priya Patil', amount: 1500, initiative: 'Sankalp Anathalay' },
-      { name: 'Amit Kulkarni', amount: 3000, initiative: 'Community Radio Center' },
-    ];
+   const sampleDonors = [];
 
     donorItemsMarkup = sampleDonors
       .map((donor) => `<li><strong>${escapeHtml(donor.name)}</strong> donated ₹${Number(donor.amount).toLocaleString('en-IN')} for ${escapeHtml(donor.initiative)}</li>`)
