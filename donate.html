@@ -8,6 +8,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .benefit-badge {
+        margin-top: 1.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: left;
+      }
+      .bank-card {
+        border-left: 6px solid #1b4f91;
+        background: #f0f7ff;
+      }
+      .bank-card h4 {
+        color: #0b2e59;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .bank-detail-row {
+        margin-bottom: 0.6rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed #d7e1ee;
+        padding-bottom: 4px;
+        font-size: 0.95rem;
+      }
+      .bank-detail-row strong {
+        color: #0b2e59;
+      }
+    </style>
   </head>
   <body>
     <div class="top-strip">Public Welfare Information Interface</div>
@@ -16,7 +49,7 @@
         <div class="emblem">🛡️</div>
         <div>
           <h1>Sankalp Gramin Vikas Sanstha</h1>
-          <p>Empowering rural Maharashtra through sustainable development, scientific dairy technologies, and quality education. A transparent, 12A & 80G certified organization dedicated to building resilient and self-reliant village ecosystem</p>
+          <p>Reg: MH/484/2018 | PAN: AAXTS0449Q | 12A & 80G Certified</p>
         </div>
         <div class="utility">
           <p><strong>Helpline:</strong> +91 9359435183 / 9860352882</p>
@@ -45,70 +78,70 @@
 
     <section class="page-hero">
       <div class="container">
-        <h2>Support Rural Development</h2>
-        <p>Your donation strengthens community programs and grassroots implementation.</p>
+        <h2>Support Our Mission</h2>
+        <p>Your contribution strengthens community programs and grassroots implementation.</p>
+        
+        <div class="benefit-badge">
+          <p style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 4px;">✅ Tax Benefit: 80G Certified</p>
+          <p style="font-size: 0.9rem; color: #f0f7ff;">All donations are tax-exempt under Section 80G of the Income Tax Act.</p>
+          <p style="font-size: 0.8rem; opacity: 0.9; color: #fff; margin-top: 5px;">URN: AAXTS0449QF20261</p>
+        </div>
       </div>
     </section>
 
     <main>
       <section>
         <div class="container grid grid-2">
-          <article class="card">
-            <h4>Suggested Support Values</h4>
-            <p>₹500 Learning support kit</p>
-            <p>₹1500 Health awareness camp support</p>
-            <p>₹3000 Women skill training support</p>
-            <p>₹5000 Village program support</p>
-          </article>
+          <div class="grid" style="gap: 1.5rem;">
+            <article class="card bank-card">
+              <h4>🏦 Direct Bank Transfer (NEFT/IMPS)</h4>
+              <div class="bank-detail-row"><strong>Account Name</strong> <span>M/S SANKALP GRAMIN VIKAS SANSTHA</span></div>
+              <div class="bank-detail-row"><strong>Account Number</strong> <span>364202010135512</span></div>
+              <div class="bank-detail-row"><strong>Bank Name</strong> <span>Union Bank of India</span></div>
+              <div class="bank-detail-row"><strong>Branch</strong> <span>Rashin</span></div>
+              <div class="bank-detail-row"><strong>IFSC Code</strong> <span>UBIN0536423</span></div>
+              <div class="bank-detail-row"><strong>Account Type</strong> <span>Savings</span></div>
+              
+              <div style="margin-top: 1.5rem; padding: 0.8rem; background: #fff; border-radius: 8px; font-size: 0.85rem; color: #5b6d82; border: 1px solid #d7e1ee;">
+                <strong>सूचना:</strong> बँक ट्रान्सफर केल्यानंतर, कृपया व्यवहाराचा स्क्रीनशॉट आणि तुमचे पॅन कार्ड तपशील <strong>info@sankalpgvs.org</strong> वर पाठवावेत जेणेकरून आम्ही तुम्हाला ८०जी पावती पाठवू शकू.
+              </div>
+            </article>
+          </div>
 
           <article class="card">
-            <h4>Donate Securely</h4>
-            <p style="margin-bottom:0.65rem">Choose initiative and amount, then continue to secure payment checkout.</p>
+            <h4>Donate Securely Online</h4>
+            <p style="margin-bottom:1rem; font-size: 0.9rem; color: #5b6d82;">खालील फॉर्म भरून तुम्ही UPI, कार्ड किंवा नेट बँकिंगद्वारे देणगी देऊ शकता.</p>
 
-            <label for="donationInitiative" style="display:block;margin-top:0.3rem;font-weight:600;color:#214364">Donate for Initiative</label>
-            <select id="donationInitiative" style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit">
-              <option value="general">General Fund</option>
+            <label for="donationInitiative" style="display:block; font-weight:600; color:#0b2e59">Select Initiative</label>
+            <select id="donationInitiative" style="width:100%; margin: 0.4rem 0 1rem 0; border:1px solid #cfd9e8; border-radius:8px; padding:0.6rem; font-family:inherit">
+              <option value="general">General Fund (Most Needed)</option>
               <option value="yashodaya">Yashodaya Academy</option>
               <option value="sarathi">Sarathi Study Center</option>
-              <option value="udyog">Sankalp Entrepreneurship and Training Center</option>
+              <option value="udyog">Sankalp Entrepreneurship & Training Center</option>
               <option value="vruddhashram">Sankalp Elder Care Home</option>
               <option value="anathalay">Sankalp Anathalay</option>
-              <option value="community-radio">Community Radio Center</option>
               <option value="goshala">Sankalp Goshala</option>
             </select>
 
-            <label for="donorName" style="display:block;margin-top:0.65rem;font-weight:600;color:#214364">Full Name</label>
-            <input id="donorName" type="text" placeholder="Enter your name" required style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit" />
+            <label style="display:block; font-weight:600; color:#0b2e59">Full Name</label>
+            <input id="donorName" type="text" placeholder="Enter your full name" style="width:100%; margin: 0.4rem 0 1rem 0; border:1px solid #cfd9e8; border-radius:8px; padding:0.6rem;" />
 
-            <label for="donorEmail" style="display:block;margin-top:0.65rem;font-weight:600;color:#214364">Email</label>
-            <input id="donorEmail" type="email" placeholder="Enter your email" required style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit" />
-
-            <label for="donorPhone" style="display:block;margin-top:0.65rem;font-weight:600;color:#214364">Mobile Number</label>
-            <input id="donorPhone" type="tel" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" required style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit" />
-
-            <label for="donationAmount" style="display:block;margin-top:0.65rem;font-weight:600;color:#214364">Amount (INR)</label>
-            <input id="donationAmount" type="number" min="1" step="1" value="500" required style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit" />
-
-            <label for="paymentType" style="display:block;margin-top:0.65rem;font-weight:600;color:#214364">Payment Type</label>
-            <select id="paymentType" style="width:100%;margin-top:0.3rem;border:1px solid #cfd9e8;border-radius:8px;padding:0.55rem 0.65rem;font-family:inherit" required>
-              <option value="">Select payment type</option>
-              <option value="upi">UPI</option>
-              <option value="netbanking">Net Banking (Internet Banking)</option>
-              <option value="card">Debit/Credit Card</option>
-            </select>
-
-            <div id="paymentMethodInfo" class="card" style="margin-top:0.7rem;padding:0.85rem;display:none">
-              <h4 id="paymentMethodTitle" style="margin-bottom:0.45rem">Payment Details</h4>
-              <div id="paymentMethodBody" style="color:#5b6d82;font-size:0.9rem"></div>
+            <div class="grid grid-2" style="gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <label style="display:block; font-weight:600; color:#0b2e59">Email Address</label>
+                <input id="donorEmail" type="email" placeholder="email@example.com" style="width:100%; margin-top: 0.4rem; border:1px solid #cfd9e8; border-radius:8px; padding:0.6rem;" />
+              </div>
+              <div>
+                <label style="display:block; font-weight:600; color:#0b2e59">Mobile Number</label>
+                <input id="donorPhone" type="tel" maxlength="10" placeholder="10-digit mobile" style="width:100%; margin-top: 0.4rem; border:1px solid #cfd9e8; border-radius:8px; padding:0.6rem;" />
+              </div>
             </div>
 
-            <button id="payNowBtn" type="button" class="btn btn-primary" style="margin-top:0.8rem">Proceed to Secure Payment</button>
-            <a href="contact.html" class="btn btn-secondary" style="margin-top:0.5rem">Request Receipt</a>
+            <label style="display:block; font-weight:600; color:#0b2e59">Donation Amount (INR)</label>
+            <input id="donationAmount" type="number" value="1000" min="100" style="width:100%; margin: 0.4rem 0 1.5rem 0; border:1px solid #cfd9e8; border-radius:8px; padding:0.6rem; font-size: 1.1rem; font-weight: 600;" />
 
-            <p id="paymentStatus" style="margin-top:0.7rem;color:#5b6d82;font-size:0.88rem"></p>
-            <p style="margin-top:0.55rem;color:#5b6d82;font-size:0.82rem">
-              Note: Update Razorpay key in this page before going live.
-            </p>
+            <button id="payNowBtn" type="button" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">Proceed to Secure Payment</button>
+            <p id="paymentStatus" style="margin-top:0.8rem; text-align:center; color:#5b6d82; font-size:0.85rem"></p>
           </article>
         </div>
       </section>
@@ -116,307 +149,11 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p>
+        <p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. Registered NGO: MH/484/2018. All rights reserved.</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script>
-      (function () {
-        const initiativeSelect = document.getElementById('donationInitiative');
-        const amountInput = document.getElementById('donationAmount');
-        const donorNameInput = document.getElementById('donorName');
-        const donorEmailInput = document.getElementById('donorEmail');
-        const donorPhoneInput = document.getElementById('donorPhone');
-        const paymentTypeSelect = document.getElementById('paymentType');
-        const paymentMethodInfo = document.getElementById('paymentMethodInfo');
-        const paymentMethodTitle = document.getElementById('paymentMethodTitle');
-        const paymentMethodBody = document.getElementById('paymentMethodBody');
-        const payNowButton = document.getElementById('payNowBtn');
-        const paymentStatus = document.getElementById('paymentStatus');
-
-        if (!initiativeSelect || !amountInput || !payNowButton || !paymentStatus) {
-          return;
-        }
-
-        const initiativeAliases = {
-          'community-radio-center': 'community-radio',
-          'sankalp-goshala': 'goshala'
-        };
-
-        const initiativeLabels = {
-          general: 'General Fund',
-          yashodaya: 'Yashodaya Academy',
-          sarathi: 'Sarathi Study Center',
-          udyog: 'Sankalp Entrepreneurship and Training Center',
-          vruddhashram: 'Sankalp Elder Care Home',
-          anathalay: 'Sankalp Anathalay',
-          'community-radio': 'Community Radio Center',
-          goshala: 'Sankalp Goshala'
-        };
-
-        const params = new URLSearchParams(window.location.search);
-        const requestedInitiative = (params.get('initiative') || '').trim().toLowerCase();
-        const normalizedInitiative = initiativeAliases[requestedInitiative] || requestedInitiative;
-
-        const optionExists = Array.from(initiativeSelect.options).some((option) => option.value === normalizedInitiative);
-        if (optionExists) {
-          initiativeSelect.value = normalizedInitiative;
-        }
-
-        const RAZORPAY_KEY_ID = 'rzp_test_ReplaceWithYourKey';
-        const UPI_ID = 'sankalpgramin@upi';
-        const UPI_PAYEE_NAME = 'Sankalp Gramin Vikas Sanstha';
-
-        const paymentTypeLabels = {
-          upi: 'UPI',
-          netbanking: 'Net Banking',
-          card: 'Card'
-        };
-
-        function escapeHtml(value) {
-          return String(value)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-        }
-
-        function renderPaymentMethodInfo() {
-          if (!paymentTypeSelect || !paymentMethodInfo || !paymentMethodBody || !paymentMethodTitle) {
-            return;
-          }
-
-          const selectedType = paymentTypeSelect.value;
-          const amountValue = Number(amountInput.value);
-          const safeAmount = Number.isFinite(amountValue) && amountValue > 0 ? amountValue.toFixed(2) : '0.00';
-          const initiativeValue = initiativeSelect.value;
-          const initiativeName = initiativeLabels[initiativeValue] || 'General Fund';
-          const transactionNote = 'Donation-' + initiativeName;
-
-          if (!selectedType) {
-            paymentMethodInfo.style.display = 'none';
-            paymentMethodBody.innerHTML = '';
-            payNowButton.style.display = 'inline-flex';
-            return;
-          }
-
-          paymentMethodInfo.style.display = 'block';
-
-          if (selectedType === 'upi') {
-            payNowButton.style.display = 'none';
-
-            const upiUri =
-              'upi://pay?pa=' + encodeURIComponent(UPI_ID) +
-              '&pn=' + encodeURIComponent(UPI_PAYEE_NAME) +
-              '&am=' + encodeURIComponent(safeAmount) +
-              '&cu=INR' +
-              '&tn=' + encodeURIComponent(transactionNote);
-
-            const qrUrl =
-              'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' + encodeURIComponent(upiUri);
-
-            paymentMethodTitle.textContent = 'UPI Payment Details';
-            paymentMethodBody.innerHTML =
-              '<p><strong>UPI ID:</strong> ' + escapeHtml(UPI_ID) + '</p>' +
-              '<p><strong>Payee:</strong> ' + escapeHtml(UPI_PAYEE_NAME) + '</p>' +
-              '<p><strong>Amount:</strong> ₹' + escapeHtml(safeAmount) + '</p>' +
-              '<p><strong>Reference:</strong> ' + escapeHtml(transactionNote) + '</p>' +
-              '<img id="upiQrImage" src="' + qrUrl + '" alt="UPI QR Code" style="width:220px;max-width:100%;margin-top:0.55rem;border:1px solid #d7e1ee;border-radius:8px" />' +
-              '<div style="margin-top:0.55rem"><a class="btn btn-outline" href="' + upiUri + '">Pay via UPI App</a></div>';
-
-            const upiQrImage = document.getElementById('upiQrImage');
-            if (upiQrImage) {
-              upiQrImage.addEventListener('load', function () {
-                payNowButton.style.display = 'inline-flex';
-              });
-              upiQrImage.addEventListener('error', function () {
-                paymentStatus.textContent = 'Unable to load UPI QR. Please use Pay via UPI App or try again.';
-                payNowButton.style.display = 'inline-flex';
-              });
-            }
-            return;
-          }
-
-          payNowButton.style.display = 'inline-flex';
-
-          if (selectedType === 'netbanking') {
-            paymentMethodTitle.textContent = 'Net Banking Details';
-            paymentMethodBody.innerHTML =
-              '<p>Select your bank in the secure payment window after clicking Proceed.</p>' +
-              '<ul style="padding-left:1rem;margin-top:0.3rem">' +
-              '<li>Ensure your mobile for OTP is active</li>' +
-              '<li>Keep customer ID / password ready</li>' +
-              '<li>Complete bank OTP authorization to finish payment</li>' +
-              '</ul>';
-            return;
-          }
-
-          paymentMethodTitle.textContent = 'Card Payment Details';
-          paymentMethodBody.innerHTML =
-            '<p>Use your Debit/Credit card in the secure payment window after clicking Proceed.</p>' +
-            '<ul style="padding-left:1rem;margin-top:0.3rem">' +
-            '<li>Keep card number, expiry, and CVV ready</li>' +
-            '<li>Complete OTP/3D Secure verification</li>' +
-            '<li>Payment auto-submits after successful authorization</li>' +
-            '</ul>';
-        }
-
-        if (paymentTypeSelect) {
-          paymentTypeSelect.addEventListener('change', renderPaymentMethodInfo);
-          paymentTypeSelect.addEventListener('change', function () {
-            paymentStatus.textContent = '';
-          });
-        }
-
-        amountInput.addEventListener('input', renderPaymentMethodInfo);
-        amountInput.addEventListener('input', function () {
-          paymentStatus.textContent = '';
-        });
-        initiativeSelect.addEventListener('change', renderPaymentMethodInfo);
-        initiativeSelect.addEventListener('change', function () {
-          paymentStatus.textContent = '';
-        });
-        donorNameInput.addEventListener('input', function () {
-          paymentStatus.textContent = '';
-        });
-        donorEmailInput.addEventListener('input', function () {
-          paymentStatus.textContent = '';
-        });
-        donorPhoneInput.addEventListener('input', function () {
-          paymentStatus.textContent = '';
-        });
-        renderPaymentMethodInfo();
-
-        payNowButton.addEventListener('click', function () {
-          const amountValue = Number(amountInput.value);
-          const donorName = donorNameInput.value.trim();
-          const donorEmail = donorEmailInput.value.trim();
-          const donorPhone = donorPhoneInput.value.trim();
-          const initiativeValue = initiativeSelect.value;
-          const initiativeName = initiativeLabels[initiativeValue] || 'General Fund';
-          const paymentType = paymentTypeSelect ? paymentTypeSelect.value : '';
-
-          const selectedPaymentTypeLabel = paymentTypeLabels[paymentType] || '';
-
-          if (!RAZORPAY_KEY_ID || RAZORPAY_KEY_ID.indexOf('ReplaceWithYourKey') !== -1 || !/^rzp_(test|live)_[A-Za-z0-9]+$/.test(RAZORPAY_KEY_ID)) {
-            paymentStatus.textContent = 'Payment is temporarily unavailable. Please contact support.';
-            return;
-          }
-
-          if (!Number.isFinite(amountValue) || amountValue <= 0) {
-            paymentStatus.textContent = 'Please enter a valid donation amount.';
-            return;
-          }
-
-          if (!paymentType || !selectedPaymentTypeLabel) {
-            paymentStatus.textContent = 'Please select a payment type (UPI, Net Banking, or Card).';
-            return;
-          }
-
-          if (!donorName) {
-            paymentStatus.textContent = 'Please enter your full name.';
-            return;
-          }
-
-          if (!donorEmail) {
-            paymentStatus.textContent = 'Please enter your email address.';
-            return;
-          }
-
-          if (!/^[6-9]\d{9}$/.test(donorPhone)) {
-            paymentStatus.textContent = 'Please enter a valid 10-digit mobile number.';
-            return;
-          }
-
-          if (!window.Razorpay) {
-            paymentStatus.textContent = 'Payment gateway could not be loaded. Please try again.';
-            return;
-          }
-
-          paymentStatus.textContent = '';
-          payNowButton.disabled = true;
-
-          const options = {
-            key: RAZORPAY_KEY_ID,
-            amount: Math.round(amountValue * 100),
-            currency: 'INR',
-            name: 'Sankalp Gramin Vikas Sanstha',
-            description: 'Donation for ' + initiativeName + ' via ' + selectedPaymentTypeLabel,
-            image: 'assets/logo/sankalp-logo.png',
-            method: {
-              upi: paymentType === 'upi',
-              netbanking: paymentType === 'netbanking',
-              card: paymentType === 'card',
-              wallet: false,
-              paylater: false,
-              emi: false
-            },
-            prefill: {
-              name: donorName,
-              email: donorEmail,
-              contact: donorPhone
-            },
-            notes: {
-              initiative: initiativeName,
-              initiative_code: initiativeValue,
-              payment_type: selectedPaymentTypeLabel
-            },
-            theme: {
-              color: '#2f8f4e'
-            },
-            handler: function (response) {
-              try {
-                const donationRecord = {
-                  name: donorName,
-                  amount: amountValue,
-                  initiative: initiativeName,
-                  paymentType: selectedPaymentTypeLabel,
-                  paymentId: response.razorpay_payment_id || '',
-                  createdAt: new Date().toISOString(),
-                };
-
-                const existingRaw = window.localStorage.getItem('sankalp_recent_donations');
-                const existing = existingRaw ? JSON.parse(existingRaw) : [];
-                const updated = Array.isArray(existing) ? [donationRecord, ...existing].slice(0, 20) : [donationRecord];
-                window.localStorage.setItem('sankalp_recent_donations', JSON.stringify(updated));
-              } catch (error) {
-              }
-
-              const thankYouUrl = new URL('thank-you.html', window.location.href);
-              thankYouUrl.searchParams.set('payment_id', response.razorpay_payment_id || '');
-              thankYouUrl.searchParams.set('initiative', initiativeValue);
-              thankYouUrl.searchParams.set('amount', String(amountValue));
-              thankYouUrl.searchParams.set('name', donorName);
-              thankYouUrl.searchParams.set('payment_type', paymentType);
-              window.location.href = thankYouUrl.toString();
-            },
-            modal: {
-              ondismiss: function () {
-                payNowButton.disabled = false;
-                if (!paymentStatus.textContent) {
-                  paymentStatus.textContent = 'Payment was cancelled.';
-                }
-              }
-            }
-          };
-
-          const gateway = new window.Razorpay(options);
-          gateway.on('payment.failed', function (response) {
-            payNowButton.disabled = false;
-            const reason = response && response.error && response.error.description ? response.error.description : 'Payment failed. Please try again.';
-            paymentStatus.textContent = reason;
-          });
-          try {
-            gateway.open();
-          } catch (error) {
-            payNowButton.disabled = false;
-            paymentStatus.textContent = 'Unable to open payment window. Please try again.';
-          }
-        });
-      })();
-    </script>
   </body>
 </html>
