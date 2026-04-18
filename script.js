@@ -5,8 +5,8 @@ const navbar = document.getElementById('navbar');
 document.querySelectorAll('.top-strip').forEach((strip) => {
   strip.innerHTML = `
     <div class="container top-strip-inner">
-      <span>1800 1200 188 (Tollfree)</span>
-      <span>care@svgs.in</span>
+      <span>  (Tollfree)</span>
+      <span>info@sankalpgvs.org</span>
       <span class="social-icons" aria-label="Social media">
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
