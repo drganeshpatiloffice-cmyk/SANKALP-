@@ -3,28 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agriculture Department | Sankalp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Agriculture Department | Sankalp GVS</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hod-card { background: #fff; border: 1px solid #e0e0e0; padding: 30px; margin-bottom: 40px; border-radius: 8px; display: flex; gap: 30px; align-items: flex-start; }
+      .hod-photo { width: 220px; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+      .hod-details h3 { color: #0b2e59; margin-bottom: 5px; }
+      .hod-title { color: #d9534f; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 15px; display: block; }
+      .bio-snippet { font-size: 0.95rem; line-height: 1.6; color: #444; }
+      .cert-tags { display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+      .tag { background: #f0f4f8; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; color: #0b2e59; border: 1px solid #d1d9e0; }
+      @media (max-width: 768px) { .hod-card { flex-direction: column; align-items: center; text-align: center; } }
+    </style>
   </head>
   <body>
-    <div class="top-strip"></div>
-    <header class="gov-identity"><div class="container"><div class="emblem">🛡️</div><div><h1>Sankalp Gramin Vikas Sanstha</h1><p>Registered Social Development Organization</p></div><div class="utility"></div></div></header>
-    <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="brand">Sankalp</a><button class="menu-btn" id="menuBtn">☰</button><ul class="nav-links" id="navLinks"></ul><div class="nav-right"><div id="google_translate_element" class="translate-widget"></div><a href="donate.html" class="btn btn-primary nav-btn">Donate</a></div></div></nav>
-    <section class="dept-hero" style="background-image:url('assets/departments/department-agriculture.jpg')">
+    <div class="top-strip">Public Welfare Information Interface</div>
+    <header class="gov-identity">
+      <div class="container">
+        <div class="emblem">🛡️</div>
+        <div><h1>Sankalp Gramin Vikas Sanstha</h1><p>Registered Social Development Organization</p></div>
+      </div>
+    </header>
+
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">Sankalp</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="projects.html">Programs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dept-hero" style="background-image:linear-gradient(rgba(11,46,89,0.7), rgba(11,46,89,0.7)), url('assets/departments/department-agriculture.jpg')">
       <div class="container">
         <span class="dept-badge">Agriculture Department</span>
         <h2>Supporting sustainable farming and resilient rural livelihoods.</h2>
         <p>Improving productivity, water efficiency, and market access for small and marginal farmers.</p>
       </div>
     </section>
+
     <main>
-      <section><div class="container grid grid-2"><article class="card"><h4>Core Work</h4><ul style="padding-left:1rem"><li>Farmer training and demonstration plots</li><li>Soil health and organic farming support</li><li>Water conservation and irrigation planning</li></ul></article><article class="card"><h4>Outcomes</h4><ul style="padding-left:1rem"><li>Improved crop yield and farm income</li><li>Reduced input costs and better practices</li><li>Stronger climate resilience in villages</li></ul></article></div></section>
-      <section><div class="container grid grid-3 dept-visual"><img src="assets/sections/pexels-photo-20344348.jpeg" alt="Farmer field training"/><img src="assets/sections/pexels-photo-20344348.jpeg" alt="Agriculture support"/><img src="assets/sections/pexels-photo-20344348.jpeg" alt="Rural farming"/></div></section>
-      <section>
-        <div class="container grid grid-2">
+      <div class="container" style="margin-top: 40px;">
+        <article class="hod-card">
+          <img src="assets/hod/dr-suresh-babu.jpg" alt="Dr. Chittimothu Suresh Babu" class="hod-photo">
+          <div class="hod-details">
+            <span class="hod-title">Head of Department</span>
+            <h3>Dr. Chittimothu Suresh Babu</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Agricultural Scientist & Innovator [cite: 3]</p>
+            <div class="bio-snippet">
+              <p>Dr. Suresh Babu is an accomplished academician whose work embodies the convergence of traditional agronomic wisdom and cutting-edge technological advancement[cite: 3]. He holds a Ph.D. in Agronomy with an interdisciplinary background including an MBA in Marketing and Sales[cite: 5, 7].</p>
+              <p style="margin-top:10px;">His research focuses on <strong>nitrogen use efficiency, nanotechnology, and climate-smart agronomy</strong>[cite: 9]. He has filed multiple patents for <strong>AI-enabled decision support systems</strong> and precision irrigation technologies[cite: 13, 14].</p>
+            </div>
+            <div class="cert-tags">
+              <span class="tag">Young Researcher Award </span>
+              <span class="tag">Young Agronomist Award </span>
+              <span class="tag">AI & IoT Specialist [cite: 14]</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h4>Core Work</h4>
+            <ul style="padding-left:1rem">
+              <li>Farmer training and demonstration plots</li>
+              <li>Soil health and organic farming support</li>
+              <li>Water conservation and irrigation planning</li>
+              <li><strong>New:</strong> Nanotechnology and digital agriculture integration [cite: 9]</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h4>Outcomes</h4>
+            <ul style="padding-left:1rem">
+              <li>Improved crop yield and farm income</li>
+              <li>Reduced input costs and better practices</li>
+              <li>Stronger climate resilience in villages</li>
+              <li><strong>New:</strong> AI-enabled precision farming solutions [cite: 14]</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid grid-2" style="margin-top: 20px;">
           <article class="card">
             <h4>Department Mandate</h4>
             <p>Strengthen smallholder agriculture through climate-smart practices, improved soil and water management, and better market readiness for farming communities.</p>
@@ -35,12 +96,19 @@
               <li>Farmer Field School Demonstration Program</li>
               <li>Soil Health and Organic Input Promotion</li>
               <li>Water-Smart Irrigation and Crop Planning Support</li>
+              <li>Food processing enterprise support (District Resource Person Initiative) [cite: 15]</li>
             </ul>
           </article>
         </div>
-      </section>
+      </div>
+
+      <section><div class="container grid grid-3 dept-visual" style="margin-top: 40px;">
+        <img src="assets/departments/department-agriculture.jpg" alt="Farmer field training"/>
+        <img src="assets/sections/jayanti-celebration.jpg" alt="Agriculture support"/>
+        <img src="assets/sections/youth-guidance.jpg" alt="Rural farming"/>
+      </div></section>
     </main>
+
     <footer class="footer"><div class="container"><p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p></div></footer>
-    <script src="script.js"></script>
   </body>
 </html>
