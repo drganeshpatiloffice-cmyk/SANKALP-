@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sankalp Gramin Vikas Sanstha | Public Welfare Portal</title>
+    <meta
+      name="description"
+      content="Official public welfare style website for Sankalp Gramin Vikas Sanstha working in rural development, health, education and empowerment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Scrolling top notification style */
+      /* Style for the scrolling top notification */
       .top-strip {
         background: #0b2e59;
         color: white;
@@ -18,7 +28,7 @@
       .ticker-wrapper {
         display: inline-block;
         padding-left: 100%;
-        animation: ticker 20s linear infinite;
+        animation: ticker 25s linear infinite;
       }
       @keyframes ticker {
         0% { transform: translate(0, 0); }
@@ -33,8 +43,9 @@
   <body>
     <div class="top-strip">
       <div class="ticker-wrapper">
-        <span class="ticker-item">🌐 <strong>Upcoming Webinar:</strong> Scientific Pond Fish Farming & Management - May 10, 2026. Join Dr. Ganesh Patil for expert insights!</span>
+        <span class="ticker-item">📢 <strong>Notice:</strong> Upcoming Webinar on Digital Transformation in Agriculture - May 10, 2026 at 11:00 AM. Register Now!</span>
         <span class="ticker-item">🛡️ Sankalp Gramin Vikas Sanstha: Committed to Rural Empowerment and Sustainable Development.</span>
+        <span class="ticker-item">📅 Admissions Open for Competitive Exam Batches at Yashoday Academy. Contact Helpline for details.</span>
       </div>
     </div>
 
@@ -55,7 +66,7 @@
     <nav class="navbar" id="navbar">
       <div class="container">
         <a href="index.html" class="brand">Sankalp<span>Portal</span></a>
-        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">☰</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -64,19 +75,31 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav-right">
+          <div id="google_translate_element" class="translate-widget"></div>
           <a href="donate.html" class="btn btn-primary nav-btn">Donate</a>
         </div>
       </div>
     </nav>
 
     <main>
+      <section class="recent-donor-strip" aria-label="Recent donors">
+        <div class="container recent-donor-strip-inner">
+          <strong>Recent Donors:</strong>
+          <div class="recent-donor-marquee">
+            <ul id="recentDonorList" class="recent-donor-list"></ul>
+          </div>
+          <p id="recentDonorEmpty" class="recent-donor-empty"></p>
+        </div>
+      </section>
+
       <section class="hero-slider" id="heroSlider">
         <div class="hero-slides" id="heroSlides">
+          
           <article class="hero-slide active" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.85), rgba(11,46,89,0.6)), url('assets/sections/jayanti-celebration.jpg');">
             <div class="container hero-overlay-content">
               <p class="hero-tag">Special Event</p>
               <h2>Dr. Babasaheb Ambedkar & Mahatma Phule Jayanti</h2>
-              <p>Honoring our social reformers through community engagement and awareness in Rashin.</p>
+              <p>Honoring our social reformers through community engagement and educational awareness programs in Rashin.</p>
               <a href="projects.html" class="btn btn-secondary">View Program Gallery</a>
             </div>
           </article>
@@ -85,30 +108,47 @@
             <div class="container hero-overlay-content">
               <p class="hero-tag">Active Program</p>
               <h2>Youth Guidance & Career Mentoring</h2>
-              <p>Empowering students for career success through Yashoday Academy and our study library.</p>
+              <p>Empowering rural students for competitive exams and career success through Yashoday Academy.</p>
               <a href="projects.html" class="btn btn-secondary">Learn More</a>
             </div>
           </article>
-          
+
+          <article class="hero-slide" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.82), rgba(11,46,89,0.55)), url('assets/departments/department-agriculture.jpg');">
+            <div class="container hero-overlay-content"><p class="hero-tag">Agriculture</p><h2>Modernizing Farming</h2><p>Advancing agritech solutions and sustainable crop cycles.</p><a href="department-agriculture.html" class="btn btn-secondary">View Dept</a></div>
+          </article>
           </div>
-        <button class="hero-control prev" id="heroPrev">❮</button>
-        <button class="hero-control next" id="heroNext">❯</button>
+        <button class="hero-control prev" id="heroPrev" aria-label="Previous slide">❮</button>
+        <button class="hero-control next" id="heroNext" aria-label="Next slide">❯</button>
         <div class="hero-dots" id="heroDots"></div>
       </section>
 
       <section>
-        <div class="container">
-          <article class="card notice" style="max-width: 600px; margin: 0 auto; border-top: 4px solid var(--gov-blue);">
-            <div style="text-align: center;">
-              <h4>📅 Upcoming Webinar</h4>
-              <div style="margin-top: 15px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
-                <h5 style="color: #d9534f; margin-bottom: 10px;">Scientific Pond Fish Farming & Management</h5>
-                <p>Join us for a specialized technical session on modern aquaculture techniques, pond preparation, and sustainable growth.</p>
-                <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
-                <p><strong>Speaker:</strong> Dr. Ganesh Patil (CEO, Sankalp GVS)</p>
-                <p><strong>Date:</strong> May 10, 2026 | <strong>Time:</strong> 11:00 AM IST</p>
-                <a href="#" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Register for Webinar</a>
-              </div>
+        <div class="container grid grid-2">
+          <article class="card notice">
+            <h4>📅 Upcoming Events</h4>
+            <ul style="padding-left: 1rem; margin-top: 0.5rem; list-style: none;">
+              <li style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                <strong>May 05, 2026:</strong> Dairy Tech & Millet Workshop
+              </li>
+              <li style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; color: #d9534f;">
+                <strong>May 10, 2026:</strong> 🌐 LIVE WEBINAR: Digital Transformation in Agriculture
+              </li>
+              <li style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                <strong>May 12, 2026:</strong> Career Guidance (Yashoday Academy)
+              </li>
+              <li>
+                <strong>May 20, 2026:</strong> Rural Entrepreneurship SHG Meet
+              </li>
+            </ul>
+          </article>
+          <article class="card" style="border-left: 4px solid #d9534f; background: #fffaf9;">
+            <h4>🌐 Join Our Webinar</h4>
+            <div style="margin-top:0.5rem">
+              <p style="font-weight: 700; color: #d9534f; margin-bottom: 5px;">LIVE SESSION</p>
+              <p><strong>Topic: Digital Transformation in Agriculture</strong><br>
+              Key Speaker: <strong>Dr. Ganesh Patil</strong><br>
+              Date: May 10, 2026 | Time: 11:00 AM IST</p>
+              <a href="#" class="btn btn-primary" style="margin-top: 10px; display: inline-block;">Register Now</a>
             </div>
           </article>
         </div>
@@ -125,7 +165,7 @@
       <section class="visitor-stats">
         <div class="container" style="text-align: center; padding: 40px 0;">
           <div style="display: inline-block; background: #f4f7f9; padding: 15px 30px; border-radius: 50px; border: 1px solid #e0e0e0;">
-            <p style="margin: 0; font-size: 0.75rem; color: #666; text-transform: uppercase;">Portal Visitors</p>
+            <p style="margin: 0; font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Portal Visitors</p>
             <h5 id="visitorCount" style="margin: 0; font-size: 1.5rem; color: #0b2e59; font-family: monospace; font-weight: bold;">000000</h5>
           </div>
         </div>
@@ -137,15 +177,21 @@
         <div class="footer-grid">
           <div>
             <h4>Sankalp Gramin Vikas Sanstha</h4>
-            <p>Rashin, Tal. Karjat, Dist. Ahmednagar, MH - 414403</p>
+            <p>Dedicated to inclusive rural development through structured community programs.</p>
           </div>
           <div>
             <h4>Quick Links</h4>
-            <ul style="list-style: none; padding: 0;">
+            <ul>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="projects.html">Programs</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a href="donate.html">Donate</a></li>
             </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Rashin, Tal. Karjat, Dist. Ahmednagar, MH - 414403<br>
+            +91 9359435183 / 9860352882<br>
+            info@sankalpgvs.org</p>
           </div>
         </div>
         <p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p>
