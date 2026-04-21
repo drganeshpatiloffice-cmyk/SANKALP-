@@ -8,7 +8,7 @@ document.querySelectorAll('.top-strip').forEach((strip) => {
     <div class="container top-strip-inner" style="display: flex; justify-content: space-between; align-items: center;">
       <div class="ticker-container" style="overflow: hidden; white-space: nowrap; flex-grow: 1;">
         <div class="ticker-wrapper" style="display: inline-block; animation: ticker 25s linear infinite;">
-          <span class="ticker-item" style="padding: 0 40px;">🌐 <strong>Webinar:</strong> Scientific Pond Fish Farming & Management - May 10, 2026. Join Dr. Ganesh Patil!</span>
+          <span class="ticker-item" style="padding: 0 40px;">🌐 <strong>Webinar:</strong> Scientific Pond Fish Farming & Management - April 22, 2026. Join Dr. Vivek Vartak !</span>
           <span class="ticker-item" style="padding: 0 40px;">🛡️ Sankalp Gramin Vikas Sanstha: Committed to Rural Empowerment and Sustainable Development.</span>
         </div>
       </div>
