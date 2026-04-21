@@ -4,46 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sankalp Gramin Vikas Sanstha | Home</title>
-    <meta
-      name="description"
-      content="Official public welfare style website for Sankalp Gramin Vikas Sanstha working in rural development, health, education and empowerment."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Scrolling top notification style */
-      .top-strip {
-        background: #2e7d32;
-        color: white;
-        padding: 8px 0;
-        overflow: hidden;
-        white-space: nowrap;
-        font-size: 0.9rem;
-      }
-      .ticker-wrapper {
-        display: inline-block;
-        padding-left: 100%;
-        animation: ticker 25s linear infinite;
-      }
-      @keyframes ticker {
-        0% { transform: translate(0, 0); }
-        100% { transform: translate(-100%, 0); }
-      }
-      .ticker-item {
-        display: inline-block;
-        padding: 0 40px;
-      }
+      .top-strip { background: #2e7d32; color: white; padding: 8px 0; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
+      .ticker-wrapper { display: inline-block; padding-left: 100%; animation: ticker 25s linear infinite; }
+      @keyframes ticker { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
+      .ticker-item { display: inline-block; padding: 0 40px; }
+      .site-logo { height: 65px; width: auto; object-fit: contain; }
+      /* Submenu CSS logic for Identity Menu */
+      .identity-menu-list { display: flex; list-style: none; gap: 15px; margin: 0; padding: 0; font-size: 0.85rem; }
+      .identity-has-submenu { position: relative; }
+      .identity-submenu { display: none; position: absolute; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; list-style: none; padding: 10px; min-width: 200px; }
+      .identity-has-submenu:hover .identity-submenu { display: block; }
+      .identity-submenu li a { color: #333; padding: 5px 10px; display: block; text-decoration: none; }
+      .identity-submenu li a:hover { background: #f4f7f9; }
     </style>
   </head>
   <body>
     <div class="top-strip">
       <div class="ticker-wrapper">
-        <span class="ticker-item">📢 <strong>Notice:</strong> Upcoming Webinar on Digital Transformation in Agriculture - May 10, 2026 at 11:00 AM. Register Now!</span>
+        <span class="ticker-item">🌐 <strong>Upcoming Webinar:</strong> Scientific Pond Fish Farming & Management - April 22, 2026. Register via WhatsApp!</span>
         <span class="ticker-item">🛡️ Sankalp Gramin Vikas Sanstha: Committed to Rural Empowerment and Sustainable Development.</span>
       </div>
     </div>
@@ -51,81 +31,88 @@
     <header class="gov-identity">
       <div class="container">
         <div class="emblem">
-          <img src="assets/logo/sankalp-logo.png" alt="Sankalp Logo" class="site-logo" style="height: 60px; width: auto;">
+          <img src="assets/logo/sankalp-logo.png" alt="Sankalp Logo" class="site-logo" onerror="this.style.display='none'; this.parentElement.textContent='🛡️';">
         </div>
         <div>
-          <h1>Sankalp Gramin Vikas Sanstha</h1>
-          <p>Registered Social Development Organization • Rural Community Empowerment</p>
+          <h1>Sankalp Gramin Vikas Sanstha, Rashin</h1>
+          <p>Registered Social Development Organization</p>
         </div>
         <div class="utility">
-          <p><strong>Helpline:</strong> +91 9359435183 / 9860352882</p>
-          <p><strong>Email:</strong> info@sankalpgvs.org</p>
+          <nav class="identity-menu">
+            <ul class="identity-menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li class="identity-has-submenu">
+                <a href="#">About Us</a>
+                <ul class="identity-submenu">
+                  <li><a href="mission-vision.html">Mission & Vision</a></li>
+                  <li><a href="president-desk.html">President Desk</a></li>
+                  <li><a href="ceo-secretary-desk.html">CEO Desk</a></li>
+                </ul>
+              </li>
+              <li class="identity-has-submenu">
+                <a href="initiatives.html">Our Initiatives</a>
+                <ul class="identity-submenu">
+                  <li><a href="initiative-yashodaya-academy.html">Yashodaya Academy</a></li>
+                  <li><a href="initiative-sarathi-abhyasika.html">Sarathi Study Center</a></li>
+                  <li><a href="initiative-udyog-prashikshan-kendra.html">Sankalp Training Center</a></li>
+                </ul>
+              </li>
+              <li class="identity-has-submenu">
+                <a href="#">Our Team</a>
+                <ul class="identity-submenu">
+                  <li><a href="board-of-directors.html">Board of Directors</a></li>
+                  <li><a href="specialist.html">Specialists</a></li>
+                </ul>
+              </li>
+              <li class="identity-has-submenu">
+                <a href="volunteers.html">Join Us</a>
+                <ul class="identity-submenu">
+                  <li><a href="volunteers.html">Volunteers</a></li>
+                  <li><a href="current-openings.html">Current Openings</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
 
     <nav class="navbar" id="navbar">
       <div class="container">
-        <a href="index.html" class="brand">Sankalp<span>Portal</span></a>
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">☰</button>
+        <a href="index.html" class="brand">Sankalp Gramin Vikas Sanstha</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="departments.html">Departments</a></li>
           <li><a href="projects.html">Programs</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="menu-donate"><a href="donate.html" style="background: #d9534f; color: white; padding: 5px 15px; border-radius: 4px;">Donate Now</a></li>
         </ul>
-        <div class="nav-right">
-          <div id="google_translate_element" class="translate-widget"></div>
-          <a href="donate.html" class="btn btn-primary nav-btn">Donate</a>
-        </div>
       </div>
     </nav>
 
     <main>
-      <section class="recent-donor-strip" aria-label="Recent donors">
-        <div class="container recent-donor-strip-inner">
-          <strong>Recent Donors:</strong>
-          <div class="recent-donor-marquee">
-            <ul id="recentDonorList" class="recent-donor-list"></ul>
-          </div>
-          <p id="recentDonorEmpty" class="recent-donor-empty"></p>
-        </div>
-      </section>
-
       <section class="hero-slider" id="heroSlider">
         <div class="hero-slides" id="heroSlides">
-          
           <article class="hero-slide active" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.85), rgba(11,46,89,0.6)), url('assets/sections/jayanti-celebration.jpg');">
             <div class="container hero-overlay-content">
               <p class="hero-tag">Special Event</p>
               <h2>Dr. Babasaheb Ambedkar & Mahatma Phule Jayanti</h2>
-              <p>Honoring our social reformers through community engagement and educational awareness programs in Rashin.</p>
-              <a href="projects.html" class="btn btn-secondary">View Program Gallery</a>
+              <a href="projects.html" class="btn btn-secondary">View Gallery</a>
             </div>
           </article>
-
-          <article class="hero-slide" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.85), rgba(11,46,89,0.6)), url('assets/sections/youth-guidance.jpg');">
-            <div class="container hero-overlay-content">
-              <p class="hero-tag">Active Program</p>
-              <h2>Youth Guidance & Career Mentoring</h2>
-              <p>Empowering rural students for competitive exams and career success through Yashoday Academy.</p>
-              <a href="projects.html" class="btn btn-secondary">Learn More</a>
-            </div>
-          </article>
-
           <article class="hero-slide" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.82), rgba(11,46,89,0.55)), url('assets/departments/department-agriculture.jpg');">
             <div class="container hero-overlay-content">
-              <p class="hero-tag">Agriculture</p>
-              <h2>Modernizing Farming</h2>
-              <p>Advancing agritech solutions and sustainable crop cycles.</p>
+              <p class="hero-tag">Agriculture Department</p>
+              <h2>HOD: Dr. Chittimothu Suresh Babu</h2>
               <a href="department-agriculture.html" class="btn btn-secondary">View Dept</a>
             </div>
           </article>
         </div>
-        
-        <button class="hero-control prev" id="heroPrev" aria-label="Previous slide">❮</button>
-        <button class="hero-control next" id="heroNext" aria-label="Next slide">❯</button>
+        <button class="hero-control prev" id="heroPrev">❮</button>
+        <button class="hero-control next" id="heroNext">❯</button>
         <div class="hero-dots" id="heroDots"></div>
       </section>
 
@@ -133,83 +120,41 @@
         <div class="container grid grid-2">
           <article class="card notice">
             <h4>📅 Upcoming Events</h4>
-            <ul style="padding-left: 1rem; margin-top: 0.5rem; list-style: none;">
-              <li style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; color: #d9534f;">
-                <strong>April 22, 2026:</strong> 🌐 LIVE WEBINAR: Scientific Pond Fish Farming & Management
-              </li>
-              <li style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                <strong>May 12, 2026:</strong> Career Guidance (Yashoday Academy)
-              </li>
-              <li>
-                <strong>May 20, 2026:</strong> Rural Entrepreneurship SHG Meet
+            <ul style="padding-left: 1rem; margin-top: 10px; list-style: none;">
+              <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; color: #d9534f;">
+                <strong>April 22, 2026:</strong> 🌐 Scientific Pond Fish Farming Webinar
               </li>
             </ul>
           </article>
-
+          
           <article class="card" style="border-left: 4px solid #d9534f; background: #fffaf9;">
             <h4>🌐 Join Our Webinar</h4>
-            <div style="margin-top: 15px; padding: 20px; background: #f9f9f9; border-radius: 8px; text-align: center;">
-              <p style="font-weight: 700; color: #d9534f; margin-bottom: 5px;">LIVE SESSION</p>
-              <h5 style="color: #0b2e59; margin-bottom: 10px;">Topic: Scientific Pond Fish Farming & Management</h5>
-              <div style="text-align: left; margin: 15px 0; font-size: 0.95rem;">
-                <p><strong>Key Speaker:</strong> Dr. Vivek Vartak, Sr. Scientist</p>
-                <p><strong>Key Speaker:</strong> Smt. P.S. Patekar, Asst. Commissioner</p>
-              </div>
-              <p><strong>Date:</strong> April 22, 2026 | 11:00 AM</p>
-              <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                <a href="assets/documents/fish-farming-webinar.pdf" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem;">See More (PDF)</a>
-                <a href="https://chat.whatsapp.com/CY4OHasQF4N3IDZTxPq0pQ" target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">Register Now</a>
+            <div style="margin-top: 15px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
+              <h5 style="color: #0b2e59;">Scientific Pond Fish Farming & Management</h5>
+              <p><strong>Date:</strong> April 22, 2026 | 11:00 AM IST</p>
+              <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                <a href="assets/documents/fish-farming-webinar.pdf" target="_blank" class="btn btn-secondary">See More (PDF)</a>
+                <a href="https://chat.whatsapp.com/CY4OHasQF4N3IDZTxPq0pQ" target="_blank" class="btn btn-primary">Register Now</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="highlight-band">
-        <div class="container">
-          <div class="kpi"><h5>150+</h5><p>Villages</p></div>
-          <div class="kpi"><h5>250+</h5><p>Children</p></div>
-          <div class="kpi"><h5>180+</h5><p>Women Trained</p></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <h4>Sankalp Gramin Vikas Sanstha</h4>
-            <p>Dedicated to inclusive rural development through structured community programs.</p>
-          </div>
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="donate.html">Donate</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <p>Rashin, Tal. Karjat, Dist. Ahmednagar, MH - 414403<br>
-            +91 9359435183 / 9860352882<br>
-            info@sankalpgvs.org</p>
-          </div>
-        </div>
-        <p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p>
-      </div>
-
       <section class="visitor-stats">
-        <div class="container" style="text-align: center; padding: 20px 0; border-top: 1px solid #eee;">
-          <div class="stats-display" style="display: inline-flex; align-items: center; gap: 15px; background: #f4f7f9; padding: 10px 25px; border-radius: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            <span style="font-size: 1.2rem;">👤</span>
-            <div style="text-align: left;">
-              <p style="margin: 0; font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Total Visitors</p>
+        <div class="container" style="text-align: center; padding: 30px 0;">
+          <div style="display: inline-flex; align-items: center; gap: 15px; background: #f4f7f9; padding: 10px 25px; border-radius: 50px;">
+            👤 <div style="text-align: left;">
+              <p style="margin: 0; font-size: 0.7rem; color: #666; text-transform: uppercase;">Total Visitors</p>
               <h5 id="visitorCount" style="margin: 0; font-size: 1.3rem; color: #0b2e59;">000000</h5>
             </div>
           </div>
         </div>
       </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"><p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p></div>
     </footer>
 
     <script src="script.js"></script>
@@ -218,9 +163,8 @@
         let count = localStorage.getItem('v_count') || 12540;
         count = parseInt(count) + 1;
         localStorage.setItem('v_count', count);
-        const display = document.getElementById('visitorCount');
-        if(display) {
-          display.innerText = count.toString().padStart(6, '0');
+        if(document.getElementById('visitorCount')) {
+          document.getElementById('visitorCount').innerText = count.toString().padStart(6, '0');
         }
       }
       document.addEventListener('DOMContentLoaded', updateVisitors);
