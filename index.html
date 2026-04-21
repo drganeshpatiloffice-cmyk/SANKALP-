@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sankalp Gramin Vikas Sanstha >
+    <title>Sankalp Gramin Vikas Sanstha | Home</title>
     <meta
       name="description"
       content="Official public welfare style website for Sankalp Gramin Vikas Sanstha working in rural development, health, education and empowerment."
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Style for the scrolling top notification */
+      /* Scrolling top notification style */
       .top-strip {
         background: #0b2e59;
         color: white;
@@ -50,7 +50,9 @@
 
     <header class="gov-identity">
       <div class="container">
-        <div class="emblem">🛡️</div>
+        <div class="emblem">
+          <img src="assets/logo/sankalp-logo.png" alt="Sankalp Logo" class="site-logo" style="height: 60px; width: auto;">
+        </div>
         <div>
           <h1>Sankalp Gramin Vikas Sanstha</h1>
           <p>Registered Social Development Organization • Rural Community Empowerment</p>
@@ -113,15 +115,21 @@
           </article>
 
           <article class="hero-slide" style="background-image: linear-gradient(120deg, rgba(11,46,89,0.82), rgba(11,46,89,0.55)), url('assets/departments/department-agriculture.jpg');">
-            <div class="container hero-overlay-content"><p class="hero-tag">Agriculture</p><h2>Modernizing Farming</h2><p>Advancing agritech solutions and sustainable crop cycles.</p><a href="department-agriculture.html" class="btn btn-secondary">View Dept</a></div>
+            <div class="container hero-overlay-content">
+              <p class="hero-tag">Agriculture</p>
+              <h2>Modernizing Farming</h2>
+              <p>Advancing agritech solutions and sustainable crop cycles.</p>
+              <a href="department-agriculture.html" class="btn btn-secondary">View Dept</a>
+            </div>
           </article>
-          </div>
+        </div>
+        
         <button class="hero-control prev" id="heroPrev" aria-label="Previous slide">❮</button>
         <button class="hero-control next" id="heroNext" aria-label="Next slide">❯</button>
         <div class="hero-dots" id="heroDots"></div>
       </section>
 
-      <section>
+      <section style="padding: 40px 0;">
         <div class="container grid grid-2">
           <article class="card notice">
             <h4>📅 Upcoming Events</h4>
@@ -137,31 +145,25 @@
               </li>
             </ul>
           </article>
-          <article class="card" style="border-left: 4px solid #d9534f; background: #fffaf9;">
-          <h4>🌐 Join Our Webinar</h4>
-        <div style="margin-top: 15px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
-          <p style="font-weight: 700; color: #d9534f; margin-bottom: 5px;">LIVE SESSION</p>
-          
-          <h5 style="color: #0b2e59; margin-bottom: 10px;">Topic: Scientific Pond Fish Farming & Management</h5>
-          
-          <div style="text-align: left; margin: 15px 0; font-size: 0.95rem;">
-            <p><strong>Key Speaker:</strong> Dr. Vivek Vartak, Sr. Scientist, Khar Land Research Center, Panvel</p>
-            <p><strong>Key Speaker:</strong> Smt. P.S. Patekar, Assistant Commissioner of Fisheries, Ahilyanagar</p>
-          </div>
 
-          <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
-          <p><strong>Date:</strong> April 22, 2026 | <strong>Time:</strong> 11:00 AM IST</p>
-          
-          <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-            <a href="assets/documents/fish-farming-webinar.pdf" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem;">See More (PDF)</a>
-            
-            <a href="https://chat.whatsapp.com/CY4OHasQF4N3IDZTxPq0pQ" target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">Register via WhatsApp</a>
-          </div>
+          <article class="card" style="border-left: 4px solid #d9534f; background: #fffaf9;">
+            <h4>🌐 Join Our Webinar</h4>
+            <div style="margin-top: 15px; padding: 20px; background: #f9f9f9; border-radius: 8px; text-align: center;">
+              <p style="font-weight: 700; color: #d9534f; margin-bottom: 5px;">LIVE SESSION</p>
+              <h5 style="color: #0b2e59; margin-bottom: 10px;">Topic: Scientific Pond Fish Farming & Management</h5>
+              <div style="text-align: left; margin: 15px 0; font-size: 0.95rem;">
+                <p><strong>Key Speaker:</strong> Dr. Vivek Vartak, Sr. Scientist</p>
+                <p><strong>Key Speaker:</strong> Smt. P.S. Patekar, Asst. Commissioner</p>
+              </div>
+              <p><strong>Date:</strong> April 22, 2026 | 11:00 AM</p>
+              <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <a href="assets/documents/fish-farming-webinar.pdf" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem;">See More (PDF)</a>
+                <a href="https://chat.whatsapp.com/CY4OHasQF4N3IDZTxPq0pQ" target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">Register Now</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </article>
-  </div>
-</section>
+      </section>
 
       <section class="highlight-band">
         <div class="container">
@@ -171,6 +173,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-grid">
@@ -195,14 +198,16 @@
         </div>
         <p class="copy">© 2026 Sankalp Gramin Vikas Sanstha. All rights reserved.</p>
       </div>
+
       <section class="visitor-stats">
         <div class="container" style="text-align: center; padding: 20px 0; border-top: 1px solid #eee;">
           <div class="stats-display" style="display: inline-flex; align-items: center; gap: 15px; background: #f4f7f9; padding: 10px 25px; border-radius: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
             <span style="font-size: 1.2rem;">👤</span>
             <div style="text-align: left;">
               <p style="margin: 0; font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Total Visitors</p>
-              <h5 id="visitorCount" style="margin: 0; font-size: 1.3rem; color: var(--gov-blue);">000000</h5>
+              <h5 id="visitorCount" style="margin: 0; font-size: 1.3rem; color: #0b2e59;">000000</h5>
             </div>
+          </div>
         </div>
       </section>
     </footer>
@@ -213,7 +218,10 @@
         let count = localStorage.getItem('v_count') || 12540;
         count = parseInt(count) + 1;
         localStorage.setItem('v_count', count);
-        document.getElementById('visitorCount').innerText = count.toString().padStart(6, '0');
+        const display = document.getElementById('visitorCount');
+        if(display) {
+          display.innerText = count.toString().padStart(6, '0');
+        }
       }
       document.addEventListener('DOMContentLoaded', updateVisitors);
     </script>
